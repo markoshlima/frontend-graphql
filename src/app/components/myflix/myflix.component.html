@@ -1,0 +1,100 @@
+<div class="container">
+    <div class="row">
+      <div class="col">
+        <h1><span class="badge bg-secondary">GraphQL</span></h1>
+
+        <div class="card" style="margin-bottom: 20px">
+            <div class="card-header">
+                Ator
+            </div>
+            <div class="card-body">
+            <blockquote class="blockquote mb-0">
+                <p>{{resultGraphQL.data.getActor.name}}</p>
+            </blockquote>
+            </div>
+        </div>
+
+        <div class="card" style="margin-bottom: 20px">
+            <div class="card-header">
+                Personagens
+            </div>
+            <div class="card-body">
+            <blockquote class="blockquote mb-0">
+                <div *ngFor="let item of resultGraphQL.data.listCharactersActor.items">
+                    {{item.name}}
+                </div>
+            </blockquote>
+            </div>
+        </div>
+
+        <div class="card" style="margin-bottom: 20px">
+            <div class="card-header">
+                Um filme
+            </div>
+            <div class="card-body">
+            <blockquote class="blockquote mb-0">
+                <p>{{resultGraphQL.data.getMovie.name}} / {{resultGraphQL.data.getMovie.year}}</p>
+            </blockquote>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                Um usuário que assistiu
+            </div>
+            <div class="card-body">
+            <blockquote class="blockquote mb-0">
+                <p>{{resultGraphQL.data.getCustomer.name}} </p>
+            </blockquote>
+            </div>
+        </div>
+      </div>
+      <div class="col">
+        <h1><span class="badge bg-secondary">Rest</span></h1>
+
+        <div class="card" style="margin-bottom: 20px">
+            <div class="card-header">
+                Ator
+            </div>
+            <div class="card-body">
+            <blockquote class="blockquote mb-0">
+            </blockquote>
+            </div>
+        </div>
+
+        <div class="card" style="margin-bottom: 20px">
+            <div class="card-header">
+                Personagens
+            </div>
+            <div class="card-body">
+            <blockquote class="blockquote mb-0">
+            </blockquote>
+            </div>
+        </div> 
+
+        <div class="card" style="margin-bottom: 20px">
+            <div class="card-header">
+                Um filme
+            </div>
+            <div class="card-body">
+            <blockquote class="blockquote mb-0">
+            </blockquote>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                Um usuário que assistiu
+            </div>
+            <div class="card-body">
+            <blockquote class="blockquote mb-0">
+            </blockquote>
+            </div>
+        </div>
+ 
+      </div>
+    </div>
+</div>
+
+
+  
