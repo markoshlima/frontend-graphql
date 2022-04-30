@@ -18,7 +18,7 @@ export class MyflixComponent implements OnInit {
 
   ngOnInit(): void {
     this.queryGraphQL();
-    //this.queryRest();
+    this.queryRest();
   }
 
   queryGraphQL(){
